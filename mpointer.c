@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+//the original form of function
 void func1(int* p);
 void func2(int** p);
 void func3(int*** p);
 void func4(int**** p);
 
+//function main
 int main() {
 	int i=100;
 
@@ -14,38 +16,42 @@ int main() {
 	dp=&p;
 	tp=&dp;
 
-	func1(&i);
-	printf("i=%d\n",i);
+	func1(&i);  //func1 execution
+	printf("i=%d\n",i);  //i print
 
-	func2(&p);
-	printf("*p=%d\n",*p);
+	func2(&p);  //func2 execution
+	printf("*p=%d\n",*p);  //*p print
 
-	func3(&dp);
-	printf("**dp=%d\n",**dp);
+	func3(&dp);  //func3 execution
+	printf("**dp=%d\n",**dp);  //**dp print
 
-	func4(&tp);
-	printf("***tp=%d\n",***tp);
+	func4(&tp);  //func4 execution
+	printf("***tp=%d\n",***tp);  //***tp print
 
-	printf("i=%d\n",i);
+	printf("i=%d\n",i);  //modificated i print
 
 	return 0;
 }
 
+//function func1
 void func1(int* p)
 {
 	*p=*p+100;
 }
 
+//function func2
 void func2(int** p)
 {
 	**p=**p+100;
 }
 
+//function func3
 void func3(int*** p)
 {
 	***p=***p+100;
 }
 
+//function func4
 void func4(int**** p)
 {
 	****p=****p+100;
