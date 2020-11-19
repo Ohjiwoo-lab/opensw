@@ -20,15 +20,15 @@ int main() {
 	printf("i=%d\n",i);  //i print
 
 	func2(&p);  //func2 execution
-	printf("*p=%d\n",*p);  //*p print
+	printf("*p=%d\n",*p);  //print *p
 
 	func3(&dp);  //func3 execution
-	printf("**dp=%d\n",**dp);  //**dp print
+	printf("**dp=%d\n",**dp);  //print **dp 
 
 	func4(&tp);  //func4 execution
-	printf("***tp=%d\n",***tp);  //***tp print
+	printf("***tp=%d\n",***tp);  //print ***tp
 
-	printf("i=%d\n",i);  //modificated i print
+	printf("i=%d\n",i);  //print modificated i
 
 	return 0;
 }
